@@ -4,11 +4,11 @@ const Nabvar = () => {
     const items = [
         <>
         
-        <li className="text-bold text-lg"><a>Home</a></li>
-        <li className="text-bold text-lg"><a>Courses</a></li>
-        <li className="text-bold text-lg"><a>Others</a></li>
-        <li className="text-bold text-lg"><a>Blog</a></li>
-        <a className="btn bg-green-500">sign in</a>
+        <li className="font-semibold text-lg"><a>Home</a></li>
+        <li className="font-semibold text-lg"><a>Courses</a></li>
+        <li className="font-semibold text-lg"><a>Others</a></li>
+        <li className="font-semibold text-lg"><a>Blog</a></li>
+        <a className="btn bg-green-500 font-bold">sign in</a>
         
         </>
     ]
