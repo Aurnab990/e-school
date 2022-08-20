@@ -1,14 +1,26 @@
 import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
+import useFirebase from '../../firebase';
 
 const Nabvar = () => {
+    const {user, handleSignOut} = useFirebase();
     const items = [
         <>       
         <Link to="home"><li className="font-semibold text-lg"><a>Home</a></li></Link>
         <Link to="courses"><li className="font-semibold text-lg"><a>Courses</a></li></Link>
         <li className="font-semibold text-lg"><a>Others</a></li>
         <li className="font-semibold text-lg"><a>Blog</a></li>
-        <Link to="login"><a className="btn bg-green-500 font-bold">sign in</a></Link>   
+        <li className='bg-green-400 rounded-xl'>
+                            {
+                                user?.uid
+                                ?
+                                <button onClick={handleSignOut} >sign out</button>
+                                :
+                                <Link as={Link} to="/login" >Sign in</Link>
+                            }
+                            
+                            
+                        </li>
         </>
     ]
     return (

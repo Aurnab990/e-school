@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import {  Link } from "react-router-dom";
 import Services from './Services';
+import Navigate from '../../Navigate';
+import useFirebase from '../../firebase';
 
 const Courses = () => {
     const [Courses, setCourses] = useState(['']);
+    const {user, handleSignOut} = useFirebase();
 
     useEffect(() => {
         fetch('Courses.json')
@@ -24,7 +28,13 @@ const Courses = () => {
                             <h2 class="card-title">{Course.name}</h2>
                             <p>by {Course.author}</p>
                             <div class="card-actions">
-                                <button class="btn rounded-2xl bg-green-500">Purchase now..</button>
+                            {
+                                user?
+                                <Link to={'/courses'}><button class="btn rounded-2xl bg-green-500">Purchase now..</button></Link>
+                                :
+                                <Link to={'/login'}><button class="btn rounded-2xl bg-green-500">Purchase now..</button></Link>
+                            }
+                                
                             </div>
                         </div>
                     </div>

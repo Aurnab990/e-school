@@ -4,6 +4,7 @@ import { createUserWithEmailAndPassword,getAuth, sendEmailVerification} from "fi
 import {  Link,useNavigate } from "react-router-dom";
 
 import app from '../firebase.init';
+import useFirebase from '../firebase';
 
 
 const auth = getAuth(app);
@@ -11,6 +12,7 @@ const Signup = () => {
     const [email, setEmail] = useState([]);
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
+    const {signInWithGoogle} = useFirebase();
 
     const [createUserWithEmailAndPassword,user] = useCreateUserWithEmailAndPassword(auth);
     const handleName = event =>{
@@ -83,8 +85,10 @@ const Signup = () => {
                             </div>
                             <div class="form-control  grid grid-cols-2">
                                 <button class="btn btn-primary"><Link to={'/courses'}>Login</Link></button>
-                                <button className=' w-2/4 ml-8  '> <img className='w-20 ' src="https://logowik.com/content/uploads/images/985_google_g_icon.jpg" alt="" /> </button>
+                                <button onClick={signInWithGoogle} className=' w-2/4 ml-8  '> <img className='w-20 ' src="https://logowik.com/content/uploads/images/985_google_g_icon.jpg" alt="" /> </button>
+                                
                             </div>
+                            
                            
 
                 
