@@ -1,15 +1,14 @@
 import React from 'react';
+import { Routes, Route, Link } from "react-router-dom";
 
 const Nabvar = () => {
     const items = [
-        <>
-        
-        <li className="font-semibold text-lg"><a>Home</a></li>
+        <>       
+        <Link to="home"><li className="font-semibold text-lg"><a>Home</a></li></Link>
         <li className="font-semibold text-lg"><a>Courses</a></li>
         <li className="font-semibold text-lg"><a>Others</a></li>
         <li className="font-semibold text-lg"><a>Blog</a></li>
-        <a className="btn bg-green-500 font-bold">sign in</a>
-        
+        <Link to="login"><a className="btn bg-green-500 font-bold">sign in</a></Link>   
         </>
     ]
     return (
