@@ -24,7 +24,7 @@ const Courses = () => {
                             <h2 class="card-title">{Course.name}</h2>
                             <p>by {Course.author}</p>
                             <div class="card-actions">
-                                <button class="btn btn-primary">Buy Now</button>
+                                <button class="btn rounded-2xl bg-green-500">Purchase now..</button>
                             </div>
                         </div>
                     </div>

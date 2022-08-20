@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import { createUserWithEmailAndPassword, getAuth, sendEmailVerification} from "firebase/auth";
-import {  Link } from "react-router-dom";
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { createUserWithEmailAndPassword,getAuth, sendEmailVerification} from "firebase/auth";
+import {  Link,useNavigate } from "react-router-dom";
+
 import app from '../firebase.init';
 
 
-const auth = getAuth(app)
+const auth = getAuth(app);
 const Signup = () => {
     const [email, setEmail] = useState([]);
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
-    
+    const [createUserWithEmailAndPassword,user] = useCreateUserWithEmailAndPassword(auth);
     const handleName = event =>{
         console.log(event.target.value);
     }
@@ -20,11 +23,15 @@ const Signup = () => {
     const handlePassword = event => {
         setPassword(event.target.value);
     }
+    if(user){
+        navigate('/login');
+    }
+    
 
 
     const handleUser = event => {
-        createUserWithEmailAndPassword(auth,email,password)
-        .then(result =>{
+        createUserWithEmailAndPassword(email,password)
+        /*.then(result =>{
             const user = result.user;
             console.log(user);
             varify();
@@ -32,19 +39,19 @@ const Signup = () => {
         .catch(error =>{
             console.error(error);
         })
-        /*console.log("Successs");
-        //alert('Account created succesfully');*/
-        event.preventDefault();
+        //console.log("Successs");
+        //alert('Account created succesfully');
+        event.preventDefault();*/
         
-
     }
-    const varify = ()=>{
+    /*const varify = ()=>{
         sendEmailVerification(auth.currentUser)
         .then(()=>{
             alert("Please Verify your email");
         })
         .catch()
-    }
+    }*/
+    
 
     return (
         <div>
@@ -75,7 +82,7 @@ const Signup = () => {
                                 </label>
                             </div>
                             <div class="form-control  grid grid-cols-2">
-                                <button class="btn btn-primary">Login</button>
+                                <button class="btn btn-primary"><Link to={'/courses'}>Login</Link></button>
                                 <button className=' w-2/4 ml-8  '> <img className='w-20 ' src="https://logowik.com/content/uploads/images/985_google_g_icon.jpg" alt="" /> </button>
                             </div>
                            
