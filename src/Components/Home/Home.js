@@ -1,6 +1,7 @@
 import React from 'react';
 import Courses from './Courses';
 import Header from './Header';
+import Services from './Services';
 import Success from './Success';
 
 const Home = () => {

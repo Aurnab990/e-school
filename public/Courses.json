@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Web development course",
+        "price": "120.81",
+        "author": "Jhankar Mahamub",
+        "available": "8",
+        
+        "description": "What can Uncle Quentin be up to -- all alone -- on Kirrin Island? He won't let anyone visit -- not even George and the rest of the Famous Five. But Quentin isn't really all alone on the island -- somebody is watching his every move!",
+        "img": "https://miro.medium.com/max/750/1*jGtzzbyshVAnYHrslLtbAg.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "App devlopment course",
+        "price": "$17.81",
+        "author": "Jubayeer Hussain",
+        "available": "18",
+        "supplier": "David Hum",
+        "description": "It's no longer safe for Harry at Hogwarts, so he and his best friends, Ron and Hermione, are on the run. Professor Dumbledore has given them clues about what they need to do to defeat the dark wizard, Lord Voldemort, once and for all, but it's up to them to figure out what these hints and suggestions really mean. Their cross-country odyssey",
+        "img": "https://miro.medium.com/max/1400/1*chEvq4TZ_v30O9YnO3Gifw.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Block-chain Developer course",
+        "price": "$8.51",
+        "author": "Nicola Yoon",
+        "available": "5",
+        "supplier": "David Hum",
+        "description": "The story of a teenage girl who's literally allergic to the outside world. When a new family moves in next door, she begins a complicated romance that challenges everything she's ever known. The narrative unfolds via vignettes, diary entries, texts, charts, lists, illustrations, and more.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFkE951NznC989E2IkR6zBMDLnGJAN8Qvzgv1Xa7Lr3qrnPsdZwTkeOBfk1zzJu0wAFaE&usqp=CAU"
+    },
+    {
+        "id": 4,
+        "name": "DS and Algo course",
+        "price": "$5.51",
+        "author": " Sarah J. Maas",
+        "available": "15",
+        "supplier": "David Hum",
+        "description": "After she has served a year of hard labor in the salt mines of Endovier for her crimes, Crown Prince Dorian offers eighteen-year-old assassin Celaena Sardothien her freedom on the condition that she act as his champion in a competition to find a new royal assassin.",
+        "img": "https://www.designer-daily.com/wp-content/uploads/2020/03/web-dev-business.jpg"
+    },
+    {
+        "id": 5,
+        "name": "SEO and Digital marketing",
+        "price": "$2.51",
+        "author": "E.B. White",
+        "available": "11",
+        "supplier": "David Hum",
+        "description": "Louis, a romantic swan, is in love with the angelic Serena, but he can't tell her how he feels; he has no voice. When he meets eleven-year-old Sam Beaver, a human friend, he goes to school with him to learn how to read and write. Louis' father also helps out; he steals a brass trumpet for his son. In the end, Louis learns to play, wins",
+        "img": "https://www.arihantwebtech.com/fr/images/web-development-company-paris.png"
+    },
+    {
+        "id": 6,
+        "name": "Java developer course",
+        "price": "$3.21",
+        "author": " Shannon Messenger and Mathilde Tamae-Bouhon",
+        "available": "17",
+        "supplier": "David Hum",
+        "description": "Sophie Foster is on the run—but at least she’s not alone. Her closest friends from the Lost Cities have gone with her to join the Black Swan. They still have doubts about",
+        "img": "https://softwarelozi.com/wp-content/uploads/2021/01/What-are-Web-development-services.jpg"
+    }
+]

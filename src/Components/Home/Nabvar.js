@@ -5,7 +5,7 @@ const Nabvar = () => {
     const items = [
         <>       
         <Link to="home"><li className="font-semibold text-lg"><a>Home</a></li></Link>
-        <li className="font-semibold text-lg"><a>Courses</a></li>
+        <Link to="courses"><li className="font-semibold text-lg"><a>Courses</a></li></Link>
         <li className="font-semibold text-lg"><a>Others</a></li>
         <li className="font-semibold text-lg"><a>Blog</a></li>
         <Link to="login"><a className="btn bg-green-500 font-bold">sign in</a></Link>   
