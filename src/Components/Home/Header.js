@@ -8,7 +8,7 @@ const Header = () => {
                     <img src="https://tonmoyac.github.io/e-school/images/Photos/Illustration.png" class="max-w-sm rounded-lg shadow-2xl" />
                     <div>
                         <h1 class="text-5xl font-bold"><span>Learn With fun on <span className='text-green-300'>Any Schedule</span></span></h1>
-                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p class="py-6">So, what is eLearning? eLearning, or electronic learning, is the delivery of learning and training through digital resources. Although eLearning is based on formalized learning, it is provided through electronic devices such as computers, tablets and even cellular phones that are connected to the internet.</p>
                         <Link to={'/courses'}><button class="btn rounded-2xl bg-green-500">Get Started</button></Link>
                     </div>
                 </div>
